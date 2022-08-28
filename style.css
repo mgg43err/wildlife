@@ -7,17 +7,13 @@ html {
 	padding: 0;
 }
 body {
-	margin: 0 auto;
-	width: 100vw;
-	max-width: 144opx;
+	margin: 0 0;
 	height: 779;
 }
 .header {
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
-
-	/* background-image: url(./assets/Rectangle.png); */
 }
 h1 {
 	display: none;
@@ -193,12 +189,9 @@ ul.nav_2 a {
 	text-decoration: none;
 }
 main {
-	position: absolute;
-	width: 100vw;
-	max-width: 100%;
+	display: flex;
+	flex-direction: column;
 	height: 1368px;
-	left: 0;
-	right: 0;
 	top: 780px;
 	background: #cccccc;
 }
@@ -295,7 +288,6 @@ h2 {
 	text-align: center;
 	color: #f7f7f7;
 	position: absolute;
-	top: 44.2%;
 	transform: translate(-50%, -50%);
 }
 .d-p,
@@ -309,37 +301,36 @@ h2 {
 	text-align: center;
 	color: #f7f7f7;
 	position: absolute;
-	top: 48%;
 	transform: translate(-50%, -50%);
 }
 
 .d-t {
-	position: absolute;
+	position: relative;
 	left: 25%;
 }
 .s-t {
-	position: absolute;
+	position: relative;
 	left: 50%;
 }
 .b-t {
-	position: absolute;
+	position: relative;
 	left: 75%;
 }
 .d-p {
-	position: absolute;
+	position: relative;
 	left: 25%;
 }
 .s-p {
-	position: absolute;
+	position: relative;
 	left: 50%;
 }
 .b-p {
-	position: absolute;
+	position: relative;
 	left: 75%;
 }
 .notify {
 	position: relative;
-	top: 236px;
+	top: 136px;
 }
 article {
 	/* left: 457px; */
@@ -400,10 +391,13 @@ article {
 }
 footer {
 	position: absolute;
-	width: 100vw;
+	width: 1904px;
 	height: 359px;
-	top: 2148px;
-	background: url(./assets/footer.jpg);
+	top: 2257px;
+}
+footer > img {
+	width: inherit;
+	height: 365px;
 }
 .form {
 	display: flex;
